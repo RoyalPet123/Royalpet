@@ -1,7 +1,168 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Test</title></head>
-  <body>
-    <h1>SI VES ESTO GRANDE, YA QUEDÓ</h1>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Estética Canina</title>
+  <meta name="description" content="Estética canina premium. Baño, corte, grooming y más. Agenda tu cita en línea." />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio">Estética Canina</a>
+      <nav class="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a class="btn btn--small" href="#agenda">Agenda</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner" data-aos="fade-up">
+        <p class="eyebrow">Grooming minimalista, limpio y pro</p>
+        <h1>Tu perro, impecable.<br/>Sin drama.</h1>
+        <p class="lead">Baño, corte, deslanado y detalles finos. Atención con calma y calidad.</p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#servicios">Ver servicios</a>
+          <a class="btn btn--ghost" href="#agenda">Agendar cita</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS + GALERÍA -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <div class="section__head" data-aos="fade-up">
+          <h2>Servicios</h2>
+          <p class="muted">Todo lo que tu perro necesita, sin exceso de cosas. Calidad y detalle.</p>
+        </div>
+
+        <div class="cards" data-aos="fade-up" data-aos-delay="100">
+          <article class="card">
+            <h3>Baño premium</h3>
+            <p>Shampoo adecuado, secado correcto y aroma suave.</p>
+          </article>
+          <article class="card">
+            <h3>Corte & grooming</h3>
+            <p>Según raza o estilo. Terminados limpios y simétricos.</p>
+          </article>
+          <article class="card">
+            <h3>Deslanado</h3>
+            <p>Ideal para razas con subpelo. Menos pelo en tu casa.</p>
+          </article>
+          <article class="card">
+            <h3>Detalles</h3>
+            <p>Uñas, orejas, higiene y retoques para que se vea top.</p>
+          </article>
+        </div>
+
+        <div class="gallery" data-aos="fade-up" data-aos-delay="150">
+          <!-- Reemplaza src por tus imágenes: /img/1.jpg etc -->
+          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1200&q=80" alt="Perro en grooming" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80" alt="Perro feliz" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?auto=format&fit=crop&w=1200&q=80" alt="Corte de pelo" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80" alt="Perro limpio" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=1200&q=80" alt="Grooming" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?auto=format&fit=crop&w=1200&q=80" alt="Perrito" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section--alt">
+      <div class="container">
+        <div class="section__head" data-aos="fade-up">
+          <h2>Contacto</h2>
+          <p class="muted">Escríbenos y te respondemos rápido.</p>
+        </div>
+
+        <div class="contact" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact__box">
+            <p class="label">WhatsApp</p>
+            <a class="link" href="https://wa.me/52TU_NUMERO" target="_blank" rel="noopener">+52 TU NÚMERO</a>
+            <p class="hint">Cambia <span class="mono">52TU_NUMERO</span> por el número real.</p>
+          </div>
+
+          <div class="contact__box">
+            <p class="label">Horario</p>
+            <p>Lun–Sáb · 10:00–19:00</p>
+            <p class="muted small">Domingo cerrado</p>
+          </div>
+
+          <div class="contact__box">
+            <p class="label">Instagram</p>
+            <a class="link" href="https://instagram.com/" target="_blank" rel="noopener">@tucuenta</a>
+            <p class="muted small">Pon aquí el usuario real</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="section">
+      <div class="container">
+        <div class="section__head" data-aos="fade-up">
+          <h2>Ubicación</h2>
+          <p class="muted">Ven sin perderte. Aquí está el mapa.</p>
+        </div>
+
+        <div class="map" data-aos="fade-up" data-aos-delay="120">
+          <!-- Reemplaza el src con tu embed de Google Maps -->
+          <iframe
+            title="Mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.492180926362!2d-99.133209!3d19.432608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s!5e0!3m2!1ses!2smx!4v0000000000000"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDA -->
+    <section id="agenda" class="section section--alt">
+      <div class="container">
+        <div class="cta" data-aos="fade-up">
+          <h2>Agenda tu cita</h2>
+          <p class="muted">Elige día y hora en el calendario. Te esperamos 🐾</p>
+
+          <!-- Reemplaza el href por tu link real de reserva en Google Calendar -->
+          <a class="btn" href="PEGAR_AQUI_TU_LINK_DE_GOOGLE_CALENDAR" target="_blank" rel="noopener">
+            Agendar ahora
+          </a>
+
+          <p class="muted small">Tip: pega aquí el link directo a tu agenda o a tu página de citas.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted small">© 2026 Estética Canina. Todos los derechos reservados.</p>
+        <a class="muted small" href="#inicio">Volver arriba</a>
+      </div>
+    </footer>
+
+    <!-- Botón flotante WhatsApp (opcional) -->
+    <a class="fab" href="https://wa.me/52TU_NUMERO" target="_blank" rel="noopener" aria-label="WhatsApp">
+      WhatsApp
+    </a>
+  </main>
+
+  <!-- AOS init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true, offset: 80 });
+  </script>
+</body>
 </html>
