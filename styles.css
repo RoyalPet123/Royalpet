@@ -1,3 +1,7 @@
+/* TEST: si ves fondo negro, el CSS sí está cargando */
+body { background: #0b0b0f !important; color: #f5f5f7 !important; }
+a { color: #b39ddb !important; }
+
 {\rtf1\ansi\ansicpg1252\cocoartf2822
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
